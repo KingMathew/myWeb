@@ -1,0 +1,225 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#vzads {
+    display: none !important
+}
+
+
+.wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+body,
+html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.w3-bar-block .w3-bar-item {
+    padding: 20px
+}
+.myTop {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.divcitoBar {
+    color: white;
+}
+
+.divcitoBarBlack {
+    color: black;
+}
+
+.border {
+    border-bottom: 2px solid #616161!important
+}
+
+#img1 {
+    width: 188px;
+    height: 50px;
+}
+
+.mid {
+    position: relative;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background-image: url('../w3images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+
+.bgimg-2 {
+    background-image: url("../w3images/parallaxx.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+
+.bgimg-3 {
+    background-image: url("../w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("../w3images/Website-Design-Background.png");
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hjgg {
+    padding: 10px;
+}
+
+.servicios {
+    width: 192px;
+    height: 192px;
+}
+
+.desplegar {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+/* Menor a 1024 */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+    #map {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 0;
+    }
+    #title {
+        width: 563px;
+        height: 150px;
+    }
+}
+
+/* Entre 1024 y 427*/
+
+@media screen and (max-width: 1024px) and (min-width: 427px) {
+    #title {
+        width: 400px;
+        height: 107px;
+    }
+    #contact,
+    #work {
+        width: 450px;
+        height: 75px;
+    }
+    .info {
+        font-size: 15px;
+    }
+    .servicios {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Menor a 426*/
+
+@media only screen and (max-device-width: 426px) {
+    #title {
+        width: 188px;
+        height: 50px;
+    }
+    #contact,
+    #work {
+        width: 300px;
+        height: 50px;
+    }
+    .info {
+        font-size: 10px;
+    }
+    .servicios {
+        width: 128px;
+        height: 128px;
+    }
+}

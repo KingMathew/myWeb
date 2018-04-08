@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>KINGS-OF-DEVELOPMENT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/app.js" type="text/javascript"></script>
+<link rel="icon" href="w3images/Crown.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a style="color: white" class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            <a href="#home" id="tit" style="color: white" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" style="color: white" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> PERFIL</a>
+            <a href="#portfolio" style="color: white" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-laptop"></i> SERVICIOS</a>
+            <a href="#contact" style="color: white" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+        </div>
+        <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" style="color: white" class="w3-bar-item w3-button" onclick="toggleFunction()">PERFIL</a>
+            <a href="#portfolio" style="color: white" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICIOS</a>
+            <a href="#contact" style="color: white" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+        </div>
+    </div>
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><img id="title" src="w3images/tituloMyWeb.png"></span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h3 class="w3-center">KINGS-OF-DEVELOPMENT</h3>
+            <p class="w3-center"><em>Especialistas en desarrollo</em></p>
+            <p align="justify">Kings of development es una empresa colombiana que presta servicios de desarrollo y soporte técnico en tecnología. Nuestro objetivo es satisfacer las necesidades de nuestros clientes, llevar a cabo sus proyectos y hacer crecer sus negocios. Estamos ansiosos por colaborarte y hacer realidad tus proyectos. Contáctanos ahora.</p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><b><i class="fa fa-user w3-margin-right"></i>Mateo Ortiz Rojas - Gerente General - Ingeniero de Sistemas y Telecomunicaciones</b></p><br>
+                    <img src="w3images/user.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+                </div>
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p align="justify">Somos los reyes del desarrollo en Colombia, nos encanta crear páginas web, aplicaciones, sistemas para la gestión de la información y además atendemos solicitudes técnicas de computadoras.</p>
+                </div>
+            </div>
+            <p class="w3-large w3-center w3-padding-16">Habilidades:</p>
+            <p class="w3-wide"><i class="fa fa-laptop"></i>Desarrollo Web</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-gears"></i>Servicio Técnico</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-phone">Desarrollo Movil</i></p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+            </div>
+
+        </div>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">1+</span><br> Patrocinadores
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">10+</span><br> Proyectos
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">10+</span><br> Clientes
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">30+</span><br> Reuniones
+            </div>
+        </div>
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle w3-center">
+                <img id="work" src="w3images/nuestroTrabajo.png" alt="NF">
+            </div>
+        </div>
+        <div class="w3-content w3-container w3-padding-64" id="portfolio">
+            <h3 class="w3-center">SERVICIOS</h3>
+            <p class="w3-center"><em>Aquí los servicios de Kings of Development Colombia.<br> Click en la imagen para más información</em></p><br>
+            <div class="w3-center">
+                <div class="w3-col m3 hjgg">
+                    <img src="w3images/Laptop.png" onclick="onClick(1)" class="hvr-grow-shadow servicios" title="Desarrollo Web">
+                </div>
+                <div class="w3-col m3 hjgg">
+                    <img src="w3images/mobile.png" onclick="onClick(2)" class="hvr-grow-shadow servicios" title="Desarrolo Móvil">
+                </div>
+                <div class="w3-col m3 hjgg">
+                    <img src="w3images/database.png" onclick="onClick(3)" class="hvr-grow-shadow servicios" title="Sistemas con bases de datos">
+                </div>
+                <div class="w3-col m3 hjgg">
+                    <img src="w3images/tools.png" onclick="onClick(4)" class="hvr-grow-shadow servicios" title="Servicio Técnico">
+                </div>
+            </div>
+
+        </div>
+        <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <img id="contact" src="w3images/contacto.png" alt="NF">
+            </div>
+        </div>
+        <div class="w3-content w3-container w3-padding-64">
+            <h3 class="w3-center">CONTÁCTANOS</h3>
+            <p class="w3-center"><em>Escribenos o deja tus comentarios</em></p>
+
+            <div class="w3-row w3-padding-32 w3-section">
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <p class="info"><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bogotá, Colombia</p>
+                        <p class="info"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Celular: +57 316 750 26 12</p>
+                        <p class="info"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kingsofdevelopmentcol@gmail.com</p>
+                    </div>
+                    <p class="info"><i class="fa fa-coffee fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Agenda tu reunión, o deja una nota:</p>
+                    <br>
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+                            </div>
+                            <br>
+                            <br>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <textarea placeholder="Mensaje" required name="Message" class="w3-input w3-border" rows="3" cols="50"></textarea>
+                        <button class="w3-button w3-black w3-left w3-section" type="submit">
+                            <i class="fa fa-paper-plane"></i> ENVIAR
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Footer -->
+        <footer class="w3-center w3-black">
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity w3-margin-right"></i>
+                <i class="fa fa-instagram w3-hover-opacity w3-margin-right"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+            </div>
+            <p>kings-of-development.vzpla.net</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
